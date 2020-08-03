@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HubSpot Sanity Full" verbose="3">
+  
+  <listeners>
+   <listener class-name="com.hubspot.listeners.ExtentReportListener"/>
+   <listener class-name="com.hubspot.listeners.TestAllureListener"/>
+  
+  </listeners>
+   <test verbose="2" name="HubSpot Sanity">
+    <classes>
+      <class name="com.hubspot.tests.LoginPageTest"/>
+     <!--   <class name="com.hubspot.tests.HomePageTest"/> -->
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->
+
